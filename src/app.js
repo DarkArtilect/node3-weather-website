@@ -15,7 +15,6 @@ const partialsPath = path.join(__dirname, "../templates/partials");
 
 // setup handlebars engine and views location
 app.set("view engine", "hbs");
-app.engine("hbs", require("hbs").__express); // to fix message "Error: Cannot find module 'hbs'" at Heroku
 app.set("views", viewsPath);
 hbs.registerPartials(partialsPath);
 
