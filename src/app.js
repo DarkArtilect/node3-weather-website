@@ -75,6 +75,7 @@ app.get("/weather", (req, res) => {
   );
 });
 
+// to remove
 app.get("/produtcs", (req, res) => {
   if (!req.query.search) {
     return res.send({
