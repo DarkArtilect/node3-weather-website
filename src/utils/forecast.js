@@ -21,7 +21,11 @@ const forecast = (latitude, longitude, callback) => {
           body.currently.temperature +
           " graus. Existe " +
           body.currently.precipProbability +
-          "% de probabilidade de precipitação para o dia de hoje."
+          "% de probabilidade de precipitação para o dia de hoje. A temperatura maxima para hoje será " +
+          body.daily.data[0].temperatureHigh +
+          " e " +
+          body.daily.data[0].temperatureLow +
+          " de temperatura minima."
       );
     }
   });
